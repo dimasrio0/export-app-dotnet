@@ -1,0 +1,19 @@
+@model List<string>
+
+<h2>Data PDF</h2>
+
+<table border="1" cellPadding="10">
+    <thead>
+        <tr>No</tr>
+        <tr>Nama</tr>
+    </thead>
+    <tbody>
+        @for(int i = 0; i < Model.Count;i++){
+            
+            <tr>
+                <td>@(i +1)</td>
+                <td>@Model[i]</td>
+            </tr>
+        }
+    </tbody>
+</table>
